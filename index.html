@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scarlet Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--este cambio lo hizo Scarlet-->
+    <style>
+      
+        html{
+            scroll-behavior: smooth;
+        }
+
+        li{
+          color: #211e3d !important;
+        }
+
+        .lineaNegra {
+            position: absolute;
+            width: 500%; 
+            height: 500%; 
+            background: #f9d8d3;
+            rotate: 9deg;
+            z-index: -1;
+            left: -35%;
+            top: -20px;
+            color: white;
+        }
+
+        .showcase {
+          object-fit: contain;
+          overflow: hidden;
+        }
+
+        h3, h5, h6{
+          color: #fff;
+        }
+
+        img {
+            width: 100%;
+            z-index: 1;
+        }
+
+        .musica{
+            margin: auto;
+            color: #000 !important;
+        }
+        .musica h3,#skills h3,h5,h6{
+          color: #000;
+        }
+
+        img.icons {
+          width: 40px;
+        }
+    
+        #about{
+            background-color: black;
+            color: white;
+        }
+
+        #about i, #about h4{
+          color: #fff;
+        }
+        .description{
+          color: #f9d8d3;
+        }
+
+        .portfolio{
+          color: #000;
+        }
+        
+        .footer-programs > h6{
+          color: rgba(0, 0, 0, 0.6);
+          font-family: Tahoma, sans-serif;
+          width: 90px;
+          margin: 0 auto;
+          justify-content: center;
+          text-align: center;
+        }
+
+        section .row:nth-child(2n+3) {
+          margin-bottom: 32px !important;
+        }
+
+
+
+
+
+        @media only screen and (max-width: 600px) {
+            .description{
+                color: #000;
+            }
+
+            .musica{
+                margin: auto;
+                color:#fff;
+            }
+
+             
+
+        .lineaNegra {
+            position: absolute;
+            width: 100%;
+            height: 218%;
+            /* background: #000; */
+            /* z-index: -1; */
+            left: -35%;
+            top: -320px;
+            /* color: white; */
+            rotate: 30deg;
+            z-index: -31;
+            object-fit: contain;
+            object-position: center;
+            overflow-x: hidden;
+        }
+
+        .musica{
+          position: relative;
+          margin: auto;
+          color: #000 !important;
+          top: 60px !important;
+        }
+
+        #presentation img {
+          position: relative;
+          width: 90%;
+          z-index: 1;
+          top: 30px;
+          margin: auto;
+        }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container-fluid ">
+        <!--Header -->
+        <div class="row">
+          <header class="justify-content-between fixed-top">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid md-auto">
+                <!--Logo-->
+                <a class="navbar-brand" href="#presentation">Scarlet Gutierrez UX</a>
+                <!--Collapse-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav nav mb-2 mb-lg-0 justify-content-end">
+                    <li class="nav-item">
+                      <a href="#about" class="nav-link px-2 nav-link fw-bold py-1 px-0 active">About me</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#skills" class="nav-link px-2 nav-link fw-bold py-1 px-0">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#portfolio" class="nav-link px-2 nav-link fw-bold py-1 px-0 ">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#contact" class="btn btn-light rounded-pill text-dark fw-bold">Contact me</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+  
+        </div>
+        
+        <!--Main-->
+        <main id="presentation">
+            <div class="row showcase">
+                <div class="col-md-6 text-start position-relative md-auto d-inline-flex">
+                    <div class="musica">
+                        <h3>Hi, I'm</h3>
+                        <h1>Scarlet Gutierrez</h1>
+                        <h3>UX ingeenier / UX UI designer</h3>
+                        <a href="https://www.linkedin.com/in/scarlet-gutierrez-collado/" target="_blank"><img src="features/icons/linkedin.jpg" class="icons"></a>
+                        <a href="https://github.com/scarletmgc" target="_blank"><img src="features/icons/github.jpg" class="icons"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-start position-relative md-auto d-inline-flex">
+                    <img src="features/images/Scar-removebg.png" class="mt-4"/>
+                    <div class="lineaNegra"></div>
+                    
+                </div>
+            </div>
+        </main>
+
+        <!--Description -->
+        <div class="row">
+            <div class="lead bg-black p-4" >
+              <div class="col-10 description">
+                <p>Greetings! I’m a UX engineer and UI designer. As a UI/UX engineer, I had to develop the skills to find and implement solutions for interactivity processes between user and device, create layout with tools like Figma, Adobe Photoshop, Adobe Illustrator, HTML, CSS, JS, Bootstrap and other attractive views. 
+                </p>
+              </div>      
+            </div>
+        </div>
+
+        <!-- acerca de mi -->
+
+        <div class="row" id="about">
+            <div class="col-md-12 p-4">
+                <h3 class="text-center">About me</h3>
+            </div>
+            <div class="col-md-6 p-4">
+                <h5><i class="bi bi-lightbulb"></i> Design</h5>
+                <p>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</p>
+            </div>
+                    
+            <div class="col-md-6 p-4">
+                <h5><i class="bi bi-code-slash"></i> Development</h5>
+                <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
+            </div>
+
+            <div class="col-md-12 p-4">
+                <h5><i class="bi bi-patch-check"></i> Maintenance</h5>
+                <p>Ready to go beyond the starter template? Check out these open source projects that you can quickly duplicate to a new GitHub repository.</p>
+            </div>
+        </div>
+
+
+        <!--Skills-->
+    <section>
+        <div class="row text-center" id="skills">
+            <div class="col-md-12">
+                <h3 class="p-4 text-center">Portfolio</h3>
+            </div>
+        </div>
+
+        <div class="row mt-3 d-flex justify-content-center">
+          <div class="col-md-12">
+            <h5 class=" text-center">Design and Prototipe</h5>
+          </div>
+        </div>
+
+        <div class="row ">
+          <div class="col-md-12 d-flex justify-content-around">
+            <object data="features/images/figma.svg" width="90" height="90"></object>
+            <object data="features/images/Group50.svg" width="90" height="90"></object>
+            <object data="features/images/illustrator.svg" width="90" height="90"></object>
+            <object data="features/images/photoshop.svg" width="90" height="90"></object>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-around footer-programs ">
+            <h6>Figma</h6>
+            <h6>Lottie Files</h6>
+            <h6>Illustrator</h6>
+            <h6>Photoshop</h6>
+          </div>
+        </div>
+        
+        <div class="row mt-3 d-flex justify-content-center ">
+          <div class="col-md-12">
+            <h5 class="text-center">Develop Tools</h5>
+          </div>
+        </div>
+        
+        <div class="row ">
+          <div class="col-md-12 d-flex justify-content-around">
+            <object data="features/images/bootstrap.svg" width="90" height="90"></object>
+            <object data="features/images/git.svg" width="90" height="90"></object>
+            <object data="features/images/Group.svg" width="90" height="90"></object>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-around footer-programs ">
+            <h6>Bootstrap</h6>
+            <h6>Git</h6>
+            <h6>Javascript</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-around">
+            <object data="features/images/Group13.svg" width="100" height="100"></object>
+            <object data="features/images/Group14.svg" width="100" height="100"></object>
+            <object data="features/images/Group12.svg" width="100" height="100"></object>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-around footer-programs ">
+            <h6>Bootstrap</h6>
+            <h6>Git</h6>
+            <h6>Javascript</h6>
+          </div>
+        </div>
+        
+
+        <div class="row mt-3 d-flex justify-content-center">
+          <div class="col-md-12">
+            <h5 class="text-center">Idioms</h5>
+          </div>
+        </div>
+
+        <div class="row ">
+          <div class="col-md-12 d-flex justify-content-around">
+            <object data="features/images/image19.svg" width="90" height="90"></object>
+            <object data="features/images/image18.svg" width="90" height="90"></object>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-around footer-programs ">
+            <h6>Spanish</h6>
+            <h6>English</h6>
+          </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+              <!--------------------------------------------------- Galeria de trabajos ----------------------------->
+      <div class="row text-center p-4" id="portfolio">
+        <div class="col-md-12">
+            <h3 class="pt-4 text-center portfolio">Some Works!</h3>
+        </div>
+      </div>
+      <!-- Carousel wrapper -->
+      
+      <div class="row">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel" >
+          <div class="carousel-inner">
+            <!-- Slide one -->
+          <div class="carousel-item active">
+          
+            <div class="d-flex justify-content-evenly">
+              <div class="col-md-3 mb-4 mb-lg-0 py-4">
+                <div class="card text-center border border-0">
+                  <img
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/270584137020289.6203cec409393.jpg"
+                    class="card-img-top"
+                    alt="Peaks Against the Starry Sky"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Color Blind Buttons</h5>
+                    <p class="card-text">
+                      A example about the eAccessibility with button. s
+                    </p>
+                    <a href="https://www.behance.net/gallery/133437747/Calendar-UI" target="_blank" class="btn btn-primary" >Ver más</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4 mb-lg-0 py-4">
+                    <div class="card text-center border border-0">
+                      <img
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/a19e22169435509.644c35ea8750b.jpg"
+                        class="card-img-top"
+                        alt="Peaks Against the Starry Sky"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and make up the bulk
+                          of the card's content.
+                        </p>
+                        <a href="https://www.behance.net/gallery/172697947/UX-Project-Metro-Santo-Domingo" target="_blank" class="btn btn-primary" onclick=`window.location.href=https://docs.google.com/presentation/d/1LULzMNIlk1sTwvoCV6XVb65tCf_sOkDzDPNLTshFpqk/edit?usp=sharing'`>Ver más</a>
+                      </div>
+                    </div>
+              </div>
+  
+              <div class="col-md-3 mb-4 mb-lg-0 py-4">
+                    <div class="card text-center border border-0">
+                      <img
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2ff70b172697947.64835d026a5c2.jpg"
+                        class="card-img-top"
+                        alt="Peaks Against the Starry Sky"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Metro SD App</h5>
+                        <p class="card-text">
+                          This is a app of the subway of SD of Dominican Republic, this documentation has more details about the app, here.
+                        </p>
+                        <a href="https://www.behance.net/gallery/172697947/UX-Project-Metro-Santo-Domingo" target="_blank" class="btn btn-primary">Ver más</a>
+                      </div>
+                    </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Slide two -->
+          <div class="carousel-item">
+          
+            <div class="d-flex justify-content-evenly">
+              <div class="col-md-3 mb-4 mb-lg-0 py-4">
+                <div class="card text-center border border-0 ">
+                  <img
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/c0cd8c133437747.64b2475fb9cd0.jpg"
+                    class="card-img-top"
+                    alt="Peaks Against the Starry Sky"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Calendar UI Views</h5>
+                    <p class="card-text">
+                      this is a calendar for the user can use as agends. This exist two view:  1. "Calendar" a "Semanal". 
+                    </p>
+                    <a href="https://www.behance.net/gallery/133437747/Calendar-UI" target="_blank" class="btn btn-primary" >Ver más</a>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="col-md-3 mb-4 mb-lg-0 py-4">
+                    <div class="card text-center border border-0">
+                      <img
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/a19e22169435509.644c35ea8750b.jpg"
+                        class="card-img-top"
+                        alt="Peaks Against the Starry Sky"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">supermarket</h5>
+                        <p class="card-text">
+                          A virtual Supermarket Web Application. This is a Home page with: Car Button, Categories, Subcategories, Search Bar (with optimizations buttons components).
+                        </p>
+                        <a href="https://www.behance.net/gallery/169435509/Supermarket" target="_blank" class="btn btn-primary" onclick=`window.location.href=https://www.behance.net/gallery/169435509/Supermarket'`>Ver más</a>
+                      </div>
+                    </div>
+              </div>
+  
+              <div class="col-md-3 mb-4 mb-lg-0 py-4">
+                    <div class="card text-center border border-0">
+                      <img
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2ff70b172697947.64835d026a5c2.jpg"
+                        class="card-img-top"
+                        alt="Peaks Against the Starry Sky"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Metro SD App</h5>
+                        <p class="card-text">
+                          This is a app of the subway of SD of Dominican Republic, this documentation has more details about the app, here.
+                        </p>
+                        <a href="https://www.behance.net/gallery/172697947/UX-Project-Metro-Santo-Domingo" target="_blank" class="btn btn-primary">Ver más</a>
+                      </div>
+                    </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <!-- Slide Tree -->
+          <div class="carousel-item">
+          
+            <div class="d-flex justify-content-start">
+        
+            
+  
+              <div class="col-md-3 mb-4 mb-lg-0 py-4">
+                    <div class="card text-center border border-0">
+                      <img
+                        src="https://mir-s3-cdn-cf.behance.net/projects/404/fbce5a184793875.Y3JvcCw1MjMwLDQwOTEsMTIyOSww.jpg"
+                        class="card-img-top"
+                        alt="Peaks Against the Starry Sky"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Scarlet Portfolio</h5>
+                        <p class="card-text">
+                          This is a web for show a little bit of my abilities as UX Engineer.
+                        </p>
+                        <a href="https://www.behance.net/gallery/184793875/UX-Engineer-Portfolio" target="_blank" class="btn btn-primary">Ver más</a>
+                      </div>
+                    </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          </div>
+
+          <button class="carousel-control-prev"  type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon black" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Contact -->
+        <div class="row text-center p-4" id="portfolio">
+          <div class="col-md-12">
+              <h3 class="pt-4 text-center portfolio">Contact me</h3>
+          </div>
+        </div>
+
+        <div class="row" id="contact">
+            <form class="row needs-validation" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="validationCustom01" required>
+                  <div class="invalid-feedback">
+                    Please write your name.
+                  </div>
+                  
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="validationCustom02" required>
+                  <div class="invalid-feedback">
+                    Please write your last name.
+                  </div>
+                  
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label">E-mail</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-envelope-at-fill"></i></span>
+                    <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please write a E-mail.
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="validationTextarea" class="form-label">Message</label>
+                    <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                    <div class="invalid-feedback">
+                      Hey, you forget the message.
+                    </div>
+                </div>
+                
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Send</button>
+                </div>
+              </form>
+        </div>
+    </div>
+
+      
+
+
+
+            
+        
+  
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
+    <script>
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+                }, false)
+            })
+            })()
+    </script>
+    
+
+
+
+
+</body>
+</html>
