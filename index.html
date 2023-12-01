@@ -347,27 +347,33 @@
       <div class="row">
         <div class="col-4">
           <div id="ls" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
-            <a class="p-1 rounded" href="#ls1">Item 1</a>
-            <a class="p-1 rounded" href="#ls2">Item 2</a>
-            <a class="p-1 rounded" href="#ls3">Item 3</a>
-            <a class="p-1 rounded" href="#ls4">Item 4</a>
-            <a class="p-1 rounded" href="#ls5">Item 5</a>
+            <a class="p-1 rounded btn btn-lg btn-danger" href="#ls1">2023 - Web Design</a>
+            <a class="p-1 rounded " href="#ls1">2023 - Web Design</a>
+            <a class="p-1 rounded" href="#ls2">2023 - Programming Foundation</a>
+            <a class="p-1 rounded" href="#ls3">2023 - Foundation of User Experience Design Certificate</a>
+            <a class="p-1 rounded" href="#ls4">2022 - Responsive Web Design</a>
           </div>
         </div>
         <div class="col-8">
+          <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
           <!-- <div data-bs-spy="scroll" data-bs-target="#ls" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example"> -->
-            <div>
-            <h4 id="ls1">Item 1</h4>
-            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-            <h4 id="ls2">Item 2</h4>
-            <p>.This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-            <h4 id="ls3">Item 3</h4>
-            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-            <h4 id="ls4">Item 4</h4>
-            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-            <h4 id="ls5">Item 5</h4>
-            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-          </div>
+            <div class="certificados"> 
+              <h4 id="ls1">Web Design</h4>
+              <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+              <a href="https://skills.yourlearning.ibm.com/certificate/share/4167e3a2b6ewogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIsCiAgImxlYXJuZXJDTlVNIiA6ICIxODYxMDcyUkVHIiwKICAib2JqZWN0SWQiIDogIlVERU1ZLTc4MjQyOCIKfQ7941fe1e8f-10">See The Certificate</a>
+              
+              <h4 id="ls2">Programming Fundamentals</h4>
+              <p>.This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+              <a href="https://skills.yourlearning.ibm.com/certificate/share/b8550c5cc4ewogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIsCiAgImxlYXJuZXJDTlVNIiA6ICIxODYxMDcyUkVHIiwKICAib2JqZWN0SWQiIDogIlVERU1ZLTc4MjQyOCIKfQ7f1fad5e4f-10">See The Certificate</a>
+              
+              <h4 id="ls3">Foundation of User Experience Design Certificate</h4>
+              <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+              <a href="https://coursera.org/share/fa0587a25b6f92ead4fae03d9d50e6a5">See The Certificate</a>
+              
+              <h4 id="ls4">Responsive Web Design</h4>
+              <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+              <a href="https://www.freecodecamp.org/certification/scarlet0917/responsive-web-design">See The Certificate</a>
+            </div>
         </div>
       </div>
 
@@ -478,6 +484,9 @@
     bootstrap.ScrollSpy.getOrCreateInstance(scrollElem).refresh()
   })
 })
+
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
     </script>
     
 
