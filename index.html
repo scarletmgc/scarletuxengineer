@@ -113,7 +113,7 @@
 
         <div class="row mt-3 d-flex justify-content-center">
           <div class="col-md-12">
-            <h5 class=" text-center">Design and Prototipe</h5>
+            <h5 class=" text-center">Design with...</h5>
           </div>
         </div>
 
@@ -136,7 +136,7 @@
         
         <div class="row mt-3 d-flex justify-content-center ">
           <div class="col-md-12">
-            <h5 class="text-center">Develop Tools</h5>
+            <h5 class="text-center">Code with...</h5>
           </div>
         </div>
         
@@ -163,16 +163,16 @@
         </div>
         <div class="row">
           <div class="col-md-12 d-flex justify-content-around footer-programs ">
-            <h6>Bootstrap</h6>
+            <h6>CSS</h6>
             <h6>Git</h6>
-            <h6>Javascript</h6>
+            <h6>HTML5</h6>
           </div>
         </div>
         
 
         <div class="row mt-3 d-flex justify-content-center">
           <div class="col-md-12">
-            <h5 class="text-center">Idioms</h5>
+            <h5 class="text-center">Speak...</h5>
           </div>
         </div>
 
@@ -398,10 +398,10 @@
         </div>
 
         <div class="row" id="contact">
-            <form class="row needs-validation" novalidate>
+            <form id="contactForm" class="row needs-validation" novalidate>
                 <div class="col-md-4">
                   <label for="validationCustom01" class="form-label">First name</label>
-                  <input type="text" class="form-control" id="validationCustom01" required>
+                  <input name="first_name" type="text" class="form-control" id="validationCustom01" required>
                   <div class="invalid-feedback">
                     Please write your name.
                   </div>
@@ -409,7 +409,7 @@
                 </div>
                 <div class="col-md-4">
                   <label for="validationCustom02" class="form-label">Last name</label>
-                  <input type="text" class="form-control" id="validationCustom02" required>
+                  <input name="last_name" type="text" class="form-control" id="validationCustom02" required>
                   <div class="invalid-feedback">
                     Please write your last name.
                   </div>
@@ -419,7 +419,7 @@
                   <label for="validationCustomUsername" class="form-label">E-mail</label>
                   <div class="input-group has-validation">
                     <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-envelope-at-fill"></i></span>
-                    <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <input name="email" type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                     <div class="invalid-feedback">
                       Please write a E-mail.
                     </div>
@@ -428,14 +428,14 @@
                 
                 <div class="mb-3">
                     <label for="validationTextarea" class="form-label">Message</label>
-                    <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                    <textarea name="message" class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
                     <div class="invalid-feedback">
                       Hey, you forget the message.
                     </div>
                 </div>
                 
                 <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Send</button>
+                  <button id="submitContact" class="btn btn-primary" type="submit">Send</button>
                 </div>
               </form>
         </div>
@@ -488,7 +488,23 @@
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
     </script>
-    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("rlf__Pde8PYp4FHZn");
+      const button = document.getElementById("submitContact");
+      button.onclick = (e) => {
+        e.preventDefault();
+        emailjs.sendForm("email_service","contact_template", "#contactForm")
+        .then(({ status, text }) => console.log(`Email result ${status}:${text}`))
+        .catch(({ status, text }) => console.error(`Email error ${status} ${text}`))
+        .finally(() => form.reset());
+        
+      }
+   })();
+</script>
 
 
 
