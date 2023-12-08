@@ -117,12 +117,24 @@ img.icons {
   text-align: center;
 }
 
+section#certification-section {
+  margin: 64px 0px;
+}
+
 .certificados {
-  height: 200px;
-  background-color: rebeccapurple;
+  height: 182px;
+  width: 220px;
+  /* background-color: rebeccapurple; */
   scroll-behavior: smooth;
   scroll-margin: revert-layer;
   overflow: scroll;
+  justify-content: center;
+  margin: 0px 8px;
+}
+
+.certificados div {
+    width: 100%;
+    height: 200px;
 }
 
 section .row:nth-child(2n+3) {
