@@ -119,11 +119,14 @@ img.icons {
 
 section#certification-section {
   margin: 64px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .certificados {
   height: 182px;
-  width: 220px;
+  width: 100%;
   /* background-color: rebeccapurple; */
   scroll-behavior: smooth;
   scroll-margin: revert-layer;
