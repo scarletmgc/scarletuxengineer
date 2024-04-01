@@ -2,6 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Raleway:wght@700&display=swap');
 
+/***/
+@keyframes color {
+  0%   { background: #D3F9D8; }
+  20%  { background: #D8D3F9; }
+  40%  { background: #F9D8D3; }
+  60%  { background: #EBD3F9; }
+}
+
+
+/**/
+
+
 
 html{
     scroll-behavior: smooth;
@@ -47,6 +59,7 @@ li{
     width: 500%; 
     height: 500%; 
     background: #f9d8d3;
+    animation: color 9s infinite linear;
     rotate: 9deg;
     z-index: -1;
     left: -35%;
