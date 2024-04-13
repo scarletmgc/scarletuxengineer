@@ -13,6 +13,34 @@
 
 /**/
 
+div#botones {
+  position: relative;
+  display: flex;
+  gap: 16px;
+}
+
+.textoPresentation {
+    /* display: flex; */
+    width: 100%;
+}
+
+.imagePresentation {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+
+main#presentation {
+    width: 100%;
+    margin: 0;
+    /* display: flex; */
+    /* align-items: baseline; */
+    /* justify-content: space-evenly; */
+}
 
 
 html{
@@ -56,20 +84,30 @@ li{
 
 .lineaNegra {
     position: absolute;
-    width: 500%; 
-    height: 500%; 
+    width: 167%;
+    height: 500%;
     background: #f9d8d3;
     animation: color 9s infinite linear;
     rotate: 9deg;
     z-index: -1;
-    left: -35%;
+    left: 545px;
     top: -20px;
     color: white;
 }
 
 .showcase {
+  position: relative;
   object-fit: contain;
   overflow: hidden;
+  width: 100%;
+  float: right;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
 }
 
 h3, h5, h6{
@@ -77,15 +115,21 @@ h3, h5, h6{
 }
 
 img {
-    width: 100%;
+    width: 75%;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .musica{
     margin: auto;
     color: #000 !important;
     font-family: 'Raleway';
-
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
 }
 .musica h3,#skills h3,h5,h6{
   color: #000;
