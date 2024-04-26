@@ -1,0 +1,32 @@
+
+section#Academies{
+    position: relative;
+    /* width: 100%; */
+    /* height: 383px; */
+    background-color: #d2f9d7;
+    z-index: 1;
+    padding: 64px;
+    gap: 16px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 16px;
+    }
+  
+  
+    .academies {
+      /* display: flow; */
+      width: 315px;
+      height: 169px;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  
+  div#academiesContenedor {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: flex-start;
+      justify-content: space-around;
+      align-items: center;
+  }

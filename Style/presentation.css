@@ -1,0 +1,99 @@
+main#presentation {
+  width: 100%;
+  /* margin-top: 26px; */
+  /* padding-top: 40px; */
+  /* display: flex; */
+  /* align-items: baseline; */
+  /* justify-content: space-evenly; */
+}
+
+.showcase {
+  position: relative;
+  object-fit: contain;
+  overflow: hidden;
+  padding-top: 64px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+
+.logo{
+position: relative;
+display: inline-block;
+bottom: -20px;
+opacity:0;
+color: #ffffff;
+}
+
+.logo.active{
+bottom: 0;
+opacity: 1;
+transition:ease-in-out 0.5;
+}
+
+.logo.fade{
+bottom:150px;
+opacity: 0;
+transition:ease-in-out 0.5;
+}
+
+li{
+color: #211e3d !important;
+}
+
+.lineaNegra {
+  position: absolute;
+  width: 167%;
+  height: 500%;
+  background: #f9d8d3;
+  animation: color 9s infinite linear;
+  rotate: 9deg;
+  z-index: -1;
+  left: 545px;
+  top: -20px;
+  color: white;
+}
+
+
+.textoPresentation {
+  /* display: flex; */
+  width: 100%;
+}
+
+.imagePresentation {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.musica{
+  margin: auto;
+  color: #000 !important;
+  font-family: 'Raleway';
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.musica h3,#skills h3,h5,h6{
+color: #000;
+font-family: 'Raleway', sans-serif;
+}
+
+.musica span{
+color:#909090;
+}
+
+div#botones {
+  position: relative;
+  display: flex;
+  gap: 16px;
+}

@@ -1,0 +1,38 @@
+header{
+    height: 40px;
+    width: 100%;
+    /* justify-content: center; */
+    padding: 8px 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 2;
+}
+
+button.navbar-toggler {
+    display: none;
+}
+
+ul.menu-list {
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    gap: 16px;
+    text-decoration-line: none;
+    list-style: none;
+}
+ul li a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color: #000000A6;
+ }
+
+ @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
