@@ -1,0 +1,15 @@
+form#formulario {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 768px;
+    background: aliceblue;
+}
+
+section#contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

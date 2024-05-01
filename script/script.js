@@ -12,12 +12,13 @@ let textAcademies = ['ITLA','freeCodeCamp','google','IBM-skillBuild','alura-lata
 let skillsContent = document.querySelector("#skillsContenedor");
 let hobbiesContent = document.querySelector("#hobbiesContenedor");
 let academiesContent = document.querySelector("#academiesContenedor");
-let estudios={
+let formularioVariable = document.querySelector('#formulario');
+/*let estudios={
     ITLA:'Multimedia Tecnology',
     freeCodeCamp:'Responsive Web Design Certification',
     google:'Foundations of User Experience (UX) Design Google',
-    IBM-skillBuild:{'Diseño Web Profesional El Curso Completo, Práctico y desde 0','Introduction to HTML and CSS','Web Development Basics'},
-    alura-latam:{'Curso Online Lógica de programación: sumérgete en la programación con JavaScript',
+    IBMskillBuild:'Diseño Web Profesional El Curso Completo, Práctico y desde 0','Introduction to HTML and CSS','Web Development Basics',
+    aluralatam:{'Curso Online Lógica de programación: sumérgete en la programación con JavaScript',
         'Curso Online Lógica de programación: explorar funciones y listas',
         'Curso Online HTML5 y CSS3 parte 1: Mi primera página web',
         'Curso Online HTML5 y CSS3 parte 2: Posicionamiento, listas y navegación'
@@ -29,7 +30,7 @@ let estudios={
         'JavaScript: validando formularios'
         },
         linkedin-learning:'Woman and Technology'
-}
+}*/
 
 
 
@@ -68,12 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let kindex = 0; kindex < textAcademies.length; kindex++) {
         let academiesElements = document.createElement("div");
         let tituloContenedor = document.createElement("div");
-        let tarjetaFlip=`<div class="card transition">
-  <h2 class="transition">Heading here<br><small>description line here</small></h2>
-  <div class="cta-container transition"><a href="#" class="cta">Button</a></div>
-  <div class="card_circle transition"></div>
-</div>
-`
+        let tarjetaFlip=`<div class='card'></div>`
+        console.log(tarjetaFlip);
 
 
         let icons = document.createElement('img');
@@ -95,9 +92,17 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(tituloContenedor);
         console.log(textAcademies[kindex]);
     }
-
-
-
 });
+formularioVariable.addEventListener('submit',formularioFuction);
 
+const buttonMailTo = document.querySelector('#envioCorreo');
+function formularioFuction(evento) {
+    
+    evento.preventDefault();
+    console.log('funciono');
+    const form = new FormData(this);
+    console.log(form.get('user_name'));
 
+    buttonMailTo.setAttribute('href',`mailto:scarletmgc@gmail.com ? subject=${form.get('user_name')}email=${form.get('user_email')}${form.get('user_message')}`);
+     buttonMailTo.click();
+}
