@@ -2,6 +2,7 @@ let intro = document.querySelector('.intro');
 let logo = document.querySelector('.logo');
 
 
+
 window.addEventListener('DOMContentloader', ()=>{
     alert("Hola");
 });
@@ -106,3 +107,17 @@ function formularioFuction(evento) {
     buttonMailTo.setAttribute('href',`mailto:scarletmgc@gmail.com ? subject=${form.get('user_name')}email=${form.get('user_email')}${form.get('user_message')}`);
      buttonMailTo.click();
 }
+
+//cielo estrellado
+
+
+for ( lindex=0 ;  lindex<500 ;lindex++)
+    {
+      var space = document.querySelector('.space');
+    var posX = Math.random()*lindex;
+    var posY = Math.random()*lindex;
+    //var alfa = Math.random();
+    //var particle = '<div class="particle"     style="left:'+posX+'px;top:'+posY+'px; opacity:'+alfa+'"></div>';
+      
+      space.innerHTML += '<div class="particle"     style="left:'+posX+'px;top:'+posY+'px;"></div>';
+     }
