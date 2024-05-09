@@ -1,15 +1,20 @@
 let intro = document.querySelector('.intro');
 let logo = document.querySelector('.logo');
 
+tsParticles.load({
+    id: "tsparticles",
+    options: {
+      preset: "stars",
+      zLayers: 100,
+      background: {
+        opacity: 0
+      }
+    },
+  });
 
-
-window.addEventListener('DOMContentloader', ()=>{
-    alert("Hola");
-});
-
-let textSkills = ['bootstrap','git','javascript','CSS3','HTML5','react','illustrator','photoshop','figma','lottie-files'];
-let textHobbies = ['do-karate','fitness','cook','surf-online'];
-let textAcademies = ['ITLA','freeCodeCamp','google','IBM-skillBuild','alura-latam','linkedin-learning'];
+let textSkills = ['bootstrap', 'git', 'javascript', 'CSS3', 'HTML5', 'react', 'illustrator', 'photoshop', 'figma', 'lottie-files'];
+let textHobbies = ['do-karate', 'fitness', 'cook', 'surf-online'];
+let textAcademies = ['ITLA', 'freeCodeCamp', 'google', 'IBM-skillBuild', 'alura-latam', 'linkedin-learning'];
 let skillsContent = document.querySelector("#skillsContenedor");
 let hobbiesContent = document.querySelector("#hobbiesContenedor");
 let academiesContent = document.querySelector("#academiesContenedor");
@@ -38,29 +43,29 @@ let formularioVariable = document.querySelector('#formulario');
 
 
 document.addEventListener('DOMContentLoaded', () => {
-//Skills Sections Cubes
+    //Skills Sections Cubes
     for (let index = 0; index < textSkills.length; index++) {
         let skillsElements = document.createElement("div");
         let image = document.createElement('img');
         let hText = document.createElement("h6");
-        
-        image.setAttribute('src',`features/images/${textSkills[index]}.svg`);
-        
-        skillsElements.classList.add('skills'); 
+
+        image.setAttribute('src', `features/images/${textSkills[index]}.svg`);
+
+        skillsElements.classList.add('skills');
         skillsContent.append(skillsElements);
         skillsElements.append(image);
         skillsElements.appendChild(hText).textContent = textSkills[index];
-        console.log(textSkills[index]);       
+        console.log(textSkills[index]);
     }
-//Hobbies Sections Cubes
+    //Hobbies Sections Cubes
     for (let jindex = 0; jindex < textHobbies.length; jindex++) {
         let hobbiesElements = document.createElement("div");
         let icons = document.createElement('img');
-        let h6Text = document.createElement("h6");   
-        
-        icons.setAttribute('src',`features/icons/${textHobbies[jindex]}.svg`);
+        let h6Text = document.createElement("h6");
 
-        hobbiesElements.classList.add('hobbies'); 
+        icons.setAttribute('src', `features/icons/${textHobbies[jindex]}.svg`);
+
+        hobbiesElements.classList.add('hobbies');
         hobbiesContent.append(hobbiesElements);
         hobbiesElements.append(icons);
         hobbiesElements.appendChild(h6Text).textContent = textHobbies[jindex];
@@ -70,22 +75,22 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let kindex = 0; kindex < textAcademies.length; kindex++) {
         let academiesElements = document.createElement("div");
         let tituloContenedor = document.createElement("div");
-        let tarjetaFlip=`<div class='card'></div>`
+        let tarjetaFlip = `<div class='card'></div>`
         console.log(tarjetaFlip);
 
 
         let icons = document.createElement('img');
-        let h6TextAcademies = document.createElement("h6"); 
-        tituloContenedor.classList.add('titulos');  
-       
-        icons.setAttribute('src',`features/images/${textAcademies[kindex]}.png`);
-        
+        let h6TextAcademies = document.createElement("h6");
+        tituloContenedor.classList.add('titulos');
+
+        icons.setAttribute('src', `features/images/${textAcademies[kindex]}.png`);
+
 
 
         //tituloContenedor.appendChild(cardCertificados);
-        academiesElements.classList.add('academies'); 
-        academiesContent.append(academiesElements,tituloContenedor);
-        tituloContenedor.innerHTML=tarjetaFlip;
+        academiesElements.classList.add('academies');
+        academiesContent.append(academiesElements, tituloContenedor);
+        tituloContenedor.innerHTML = tarjetaFlip;
         //academiesContent.append(tituloContenedor);
         academiesElements.append(icons);
         academiesElements.appendChild(h6TextAcademies).textContent = textAcademies[kindex];
@@ -94,30 +99,20 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(textAcademies[kindex]);
     }
 });
-formularioVariable.addEventListener('submit',formularioFuction);
+formularioVariable.addEventListener('submit', formularioFuction);
 
 const buttonMailTo = document.querySelector('#envioCorreo');
 function formularioFuction(evento) {
-    
+
     evento.preventDefault();
     console.log('funciono');
     const form = new FormData(this);
     console.log(form.get('user_name'));
 
-    buttonMailTo.setAttribute('href',`mailto:scarletmgc@gmail.com ? subject=${form.get('user_name')}email=${form.get('user_email')}${form.get('user_message')}`);
-     buttonMailTo.click();
+    buttonMailTo.setAttribute('href', `mailto:scarletmgc@gmail.com ? subject=${form.get('user_name')}email=${form.get('user_email')}${form.get('user_message')}`);
+    buttonMailTo.click();
 }
 
 //cielo estrellado
 
 
-for ( lindex=0 ;  lindex<500 ;lindex++)
-    {
-      var space = document.querySelector('.space');
-    var posX = Math.random()*lindex;
-    var posY = Math.random()*lindex;
-    //var alfa = Math.random();
-    //var particle = '<div class="particle"     style="left:'+posX+'px;top:'+posY+'px; opacity:'+alfa+'"></div>';
-      
-      space.innerHTML += '<div class="particle"     style="left:'+posX+'px;top:'+posY+'px;"></div>';
-     }
