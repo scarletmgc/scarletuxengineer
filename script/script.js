@@ -112,7 +112,26 @@ function formularioFuction(evento) {
     buttonMailTo.setAttribute('href', `mailto:scarletmgc@gmail.com ? subject=${form.get('user_name')}email=${form.get('user_email')}${form.get('user_message')}`);
     buttonMailTo.click();
 }
+/******************Barra de Navbar********************************************** */
 
-//cielo estrellado
+/*var navBarTop = document.querySelector("header");
+body.addEventListener("scroll", () => {
+    if (body.scrollTop>500) {
+        navBarTop.style.backgroundColor = "red";
+        alert('queso');
+    }
+    });      
+*/
+    
+    document.addEventListener("scroll", () => {
 
-
+        console.log("Vertical: " + window.scrollY);
+        console.log("Horizontal: " + window.scrollX);
+        
+        if(window.scrollY>=2004){
+            document.querySelector('ul li a').style.color = "red";
+            
+        }else{
+            document.querySelector('header').style.color = "#ffffff";
+        }
+     });  

@@ -21,6 +21,7 @@ ul.menu-list {
     gap: 16px;
     text-decoration-line: none;
     list-style: none;
+    align-items: center;
 }
 ul li a {
     outline: none;
@@ -30,6 +31,22 @@ ul li a {
     font-family: 'Raleway', sans-serif;
     color: #000000A6;
  }
+
+ header li:last-child {
+	background-color:#F8F9FA;
+	border-radius:28px;
+	cursor:pointer;
+	padding: 8px 17px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 
  @media only screen and (max-width: 600px) {
     body {
