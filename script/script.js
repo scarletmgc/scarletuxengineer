@@ -128,10 +128,13 @@ body.addEventListener("scroll", () => {
         console.log("Vertical: " + window.scrollY);
         console.log("Horizontal: " + window.scrollX);
         
-        if(window.scrollY>=2004){
-            document.querySelector('ul li a').style.color = "red";
-            
+        if(window.scrollY>=3704){
+            document.querySelectorAll('li > a').forEach(a => a.style.color = 'white');
+            document.querySelector('header li:last-child').style.background='#fdbc45';        
         }else{
-            document.querySelector('header').style.color = "#ffffff";
+            document.querySelectorAll('li > a').forEach(a => a.style.color = '#000000A6')
+            document.querySelector('header li:last-child').style.background='#F8F9FA';
         }
      });  
+
+     

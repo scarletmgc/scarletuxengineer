@@ -44,6 +44,7 @@ section#contacto {
   justify-content: center;
   align-items: center;
   animation: nebula 9s infinite linear;
+  padding: 24px 0px;
 }
 
 /**************************************************************************/
