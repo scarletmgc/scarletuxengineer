@@ -40,6 +40,16 @@ p {
     font-weight: 400 !important;
 }
 
+  footer{
+    margin: 0;
+    padding: 2px;
+    text-align: center;
+    background-color: #180030;
+  }
+
+  footer p, footer a{
+  color: darkgray;
+}
 
 
 

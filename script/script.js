@@ -19,6 +19,9 @@ let skillsContent = document.querySelector("#skillsContenedor");
 let hobbiesContent = document.querySelector("#hobbiesContenedor");
 let academiesContent = document.querySelector("#academiesContenedor");
 let formularioVariable = document.querySelector('#formulario');
+let campo = document.querySelector("input");
+let requeridoCampos = document.querySelector("[required]");
+
 /*let estudios={
     ITLA:'Multimedia Tecnology',
     freeCodeCamp:'Responsive Web Design Certification',
@@ -137,4 +140,4 @@ body.addEventListener("scroll", () => {
         }
      });  
 
-     
+/********************Validaci[on de campos ************************ */
