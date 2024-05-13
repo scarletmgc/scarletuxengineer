@@ -13,7 +13,7 @@ tsParticles.load({
   });
 
 let textSkills = ['bootstrap', 'git', 'javascript', 'CSS3', 'HTML5', 'react', 'illustrator', 'photoshop', 'figma', 'lottie-files'];
-let textHobbies = ['do-karate', 'fitness', 'cook', 'surf-online'];
+let textHobbies = ['karate', 'fitness', 'cook', 'surf-online'];
 let textAcademies = ['ITLA', 'freeCodeCamp', 'google', 'IBM-skillBuild', 'alura-latam', 'linkedin-learning'];
 let skillsContent = document.querySelector("#skillsContenedor");
 let hobbiesContent = document.querySelector("#hobbiesContenedor");
@@ -140,4 +140,13 @@ body.addEventListener("scroll", () => {
         }
      });  
 
-/********************Validaci[on de campos ************************ */
+/********************Carrusel************************ */
+
+
+//const marqueeContent = document.querySelector("ul.marquee-content");
+const root = document.documentElement;
+root.style.setProperty("--marquee-elements", academiesContent.children.length);
+
+for(let cantidad=0; cantidad<academiesContent.length; cantidad++) {
+    academiesContent.appendChild(academiesContent.children[cantidad].cloneNode(true));
+}

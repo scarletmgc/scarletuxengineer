@@ -88,7 +88,7 @@ article#cifrado {
 .detalsWorks {
   width: 400px;
   height: 405px;
-  /* background-color: antiquewhite; */
+  /* background-color: antiquewhite; */ */
   /* white-space: break-spaces; */
   padding: 24px;
   row-gap: 20px;
@@ -141,7 +141,88 @@ a.repositorio, a.seeDemo {
 
 
 
+@media only screen and (max-width: 600px) {
+  section#experiencies{
+    position: relative;
+    /* width: 100%; */
+    /* height: 383px; */
+    background-color: #fff;
+    z-index: 1;
+    padding: 24px;
+    gap: 16px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 16px;
+    }
+  
+  
+  article#cifrado {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+  
+  .detalsWorks {
+    width: 100%;
+    /* height: 405px; */
+    /* background-color: antiquewhite; */
+    /* white-space: break-spaces; */
+    padding: 24px;
+    /* row-gap: 20px; */
+    /* gap: 20px; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+    /* grid-row-gap: revert; */
+    /* row-gap: 20px; */
+    column-gap: 20px;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #cifrado img {
+    width: 100%;
+    border: dashed 4px;
+    border-color: #eaf2fd;
+    box-shadow: -11px 12px 2px 1px rgba(0, 0, 255, .2);
+    stroke-dasharray: 25;
+  }
+  
+  .contenedorBoton {
+    /* display: flex; */
+    /* row-gap: 20px; */
+    /* column-gap: 16px; */
+    /* grid-row-gap: 20px; */
+    /* margin-top: 40px; */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  cite {
+    gap: 20px;
+  }
+  
+  
+  a.repositorio{
+    border: 2px solid;
+  }
+  a.repositorio, a.seeDemo {
+      background-color: transparent;
+      display:inline-block;
+      cursor:pointer;
+      /* color: blue; */
+      font-family: 'Raleway';
+      font-size: 16px;
+      padding: 11px 16px;
+      text-decoration:none;
+  }
+  
+  
 
+}
 
 
 

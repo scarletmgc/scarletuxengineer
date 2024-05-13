@@ -31,3 +31,10 @@ font-family: 'Montserrat', sans-serif;
 #about h3, #about h5{
 font-family: 'Raleway', sans-serif;
 }*/
+
+@media only screen and (max-width: 600px) {
+  section#sobreMi p {
+    width: 100%; 
+    color: #9e9e9e;
+}
+}
