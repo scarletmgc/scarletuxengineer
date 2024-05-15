@@ -49,7 +49,5 @@ ul li a {
 
 
  @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
+   
   }

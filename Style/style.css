@@ -21,6 +21,7 @@ html{
 }
 html, body{
   margin: 0;
+  overflow-x: hidden;
 }
 
 .tituloCentrado {
@@ -67,26 +68,10 @@ h6{
   font-size: 1em;
 }
 
-img {
-    width: 75%;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: dashed 4px; */
-    /* border-color: #eaf2fd; */
-    /* box-shadow: -11px 12px 2px 1px rgba(0, 0, 255, .2); */
-    /* stroke-dasharray: 25; */
-}
-
-img.icons {
-  width: 40px;
-  margin-top: 12px;
-}
 
 
 
-
+/*
 @media only screen and (max-width: 600px) {
   main#presentation {
     height: 582px;
@@ -97,7 +82,7 @@ img.icons {
 
 .imagePresentation {
     top: 50px;
-    /* height: 366px; */
+    /* height: 366px; 
 }
   .showcase {
   object-fit: contain;
@@ -110,9 +95,9 @@ img.icons {
 
 
     .description{
-        /* color: #000; */
+        /* color: #000; 
     }
-
+    
     .musica{
         margin: auto;
         color:#fff;
@@ -125,10 +110,10 @@ img.icons {
   width: 100%;
   height: 218%;
   /* background: #000; */
-  /* z-index: -1; */
+  /* z-index: -1; 
   left: -35%;
   top: -390px;
-  /* color: white; */
+  /* color: white; 
   rotate: 30deg;
   z-index: -31;
   object-fit: contain;
@@ -140,17 +125,17 @@ img.icons {
   position: relative;
   margin: auto;
   color: #000 !important;
-  /* top: 60px !important; */
+  /* top: 60px !important; 
   font-family: 'Raleway', sans-serif;
-  /* justify-content: center; */
+  /* justify-content: center; 
   text-align: center;
 }
 
 #presentation img {
   position: relative;
   z-index: 1;
-  /* top: 16px; */
+  /* top: 16px; 
   margin: auto;
 }
 
-}
+}*/
