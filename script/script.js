@@ -150,3 +150,10 @@ root.style.setProperty("--marquee-elements", academiesContent.children.length);
 for(let cantidad=0; cantidad<academiesContent.length; cantidad++) {
     academiesContent.appendChild(academiesContent.children[cantidad].cloneNode(true));
 }
+
+/*********************Menu mobile***************************** */
+function mostrarMenu() {
+        document.querySelector('.menu-list').classList.add("mostrar");
+        alert("recuerda");
+        
+}
