@@ -21,6 +21,7 @@ let academiesContent = document.querySelector("#academiesContenedor");
 let formularioVariable = document.querySelector('#formulario');
 let campo = document.querySelector("input");
 let requeridoCampos = document.querySelector("[required]");
+let temp=true;
 
 /*let estudios={
     ITLA:'Multimedia Tecnology',
@@ -131,7 +132,7 @@ body.addEventListener("scroll", () => {
         console.log("Vertical: " + window.scrollY);
         console.log("Horizontal: " + window.scrollX);
         
-        if(window.scrollY>=3704){
+        if(window.scrollY>=3404){
             document.querySelectorAll('li > a').forEach(a => a.style.color = 'white');
             document.querySelector('header li:last-child').style.background='#fdbc45';        
         }else{
@@ -153,7 +154,12 @@ for(let cantidad=0; cantidad<academiesContent.length; cantidad++) {
 
 /*********************Menu mobile***************************** */
 function mostrarMenu() {
-        document.querySelector('.menu-list').classList.add("mostrar");
-        alert("recuerda");
+        let mostrarMemuSandwish = document.querySelector('.menu-list');
+        temp = !temp; //Toggling temp variable to == true to false OR false to true ;
+      if(!temp){ //If temp variable is false
+        mostrarMemuSandwish.style.display = "none" // If temp is False
+      }else{
+        mostrarMemuSandwish.style.display = "block" // If temp is true
+      } 
         
 }
