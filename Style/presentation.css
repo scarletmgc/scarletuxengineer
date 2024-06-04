@@ -1,0 +1,384 @@
+/*main#presentation {
+  width: 100%;
+}*/
+
+.showcase {
+  position: relative;
+  object-fit: contain;
+  overflow: hidden;
+  padding-top: 64px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  /* flex-direction: row; */
+  align-content: center;
+  align-items: center;
+}
+
+
+.logo{
+position: relative;
+display: inline-block;
+bottom: -20px;
+opacity:0;
+color: #ffffff;
+}
+
+.logo.active{
+bottom: 0;
+opacity: 1;
+transition:ease-in-out 0.5;
+}
+
+.logo.fade{
+bottom:150px;
+opacity: 0;
+transition:ease-in-out 0.5;
+}
+
+li{
+color: #211e3d !important;
+}
+
+.lineaNegra {
+  position: absolute;
+  width: 167%;
+  height: 500%;
+  background: #f9d8d3;
+  animation: color 9s infinite linear;
+  rotate: 9deg;
+  z-index: -1;
+  left: 480px;
+  top: -20px;
+  color: white;
+}
+
+
+.textoPresentation {
+  width: 50%;
+  height: 100%;
+  align-items: center;
+}
+
+.imagePresentation {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.musica{
+  margin: auto;
+  color: #000 !important;
+  font-family: 'Raleway';
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+img {
+  width: 82%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.musica h3,#skills h3,h5,h6{
+color: #000;
+font-family: 'Raleway', sans-serif;
+}
+
+.musica span{color:#909090;font-size: large;}
+
+div#botones {
+  position: relative;
+  display: flex;
+  gap: 16px;
+}
+
+#botones a:nth-child(1){
+  background: #D3F9D8;
+}
+#botones a:nth-child(2){
+  background: #D8D3F9;
+}
+#botones a:nth-child(3){
+  background: #F9D8D3;
+}
+
+#botones a:nth-child(4){
+  background: #EBD3F9;
+}
+
+/****************************RESPONSIVE***************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Raleway:wght@700&display=swap');
+@import url('header.css'); @import url('presentation.css');@import url('sobreMi.css');@import url('skills.css');@import url('hobbies.css');@import url('academias.css'); @import url('experiencies.css'); @import url('contact.css');
+/***/
+@keyframes color {
+  0%   { background: #D3F9D8; }
+  20%  { background: #D8D3F9; }
+  40%  { background: #F9D8D3; }
+  60%  { background: #EBD3F9; }
+}
+@keyframes colorModeDark {
+  0%   { background: #f3fff4; }
+  20%  { background: #fbfaff; }
+  40%  { background: #fff7f6; }
+  60%  { background: #EBD3F9; }
+}
+
+html{
+  scroll-behavior: smooth;
+}
+html, body{
+  margin: 0;
+}
+
+.tituloCentrado {
+  text-align: center;
+}
+
+.tituloPrincipal {
+  font-family:'Raleway' ;
+}
+
+
+
+img.icons {
+  margin: auto;
+}
+
+
+div#botones a {
+  width: 40px;
+  height: 40px;
+  color: rebeccapurple;
+  background-color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+/**/
+
+
+p {
+    font-size: 16px !important;
+    font-family: 'Raleway';
+    font-weight: 400 !important;
+}
+
+  footer{
+    margin: 0;
+    padding: 2px;
+    text-align: center;
+    background-color: #180030;
+  }
+
+  footer p, footer a{
+  color: darkgray;
+}
+
+
+
+
+
+/*Este es el loader*/
+
+
+
+h3, h5,{
+  color: #fff;
+}
+
+h6{
+  font-size: 1em;
+}
+
+img {
+    width: 81%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+  .lineaNegra {
+    left: 545px;
+  }
+
+   .imagePresentation{
+     width:100%;
+   }
+
+  div#botones{
+    justify-content: center;
+  }
+  img.icons {
+    margin: auto !important;
+  }
+
+  main#presentation {
+  }
+  .textoPresentation {
+    width: 100%;
+    top: 60px;
+}
+
+.imagePresentation img {
+    top: 50px;
+    /* height: 366px; */
+    width: 440px;
+}
+  .showcase {
+  object-fit: contain;
+  /* height: 582px; */
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+    .description{
+        /* color: #000; */
+    }
+
+    .musica{
+        margin: auto;
+        color:#fff;
+    }
+
+     
+
+.lineaNegra {
+  position: absolute;
+  width: 100%;
+  height: 218%;
+  /* background: #000; */
+  /* z-index: -1; */
+  left: -35%;
+  top: -390px;
+  /* color: white; */
+  rotate: 30deg;
+  z-index: -31;
+  object-fit: contain;
+  object-position: center;
+  overflow-x: hidden;
+}
+
+.musica{
+  position: relative;
+  margin: auto;
+  color: #000 !important;
+  /* top: 60px !important; */
+  font-family: 'Raleway', sans-serif;
+  /* justify-content: center; */
+  text-align: center;
+}
+
+#presentation img {
+  position: relative;
+  z-index: 1;
+  /* top: 16px; */
+  margin: auto;
+}
+
+}
+
+
+@media screen and (min-width:601px) and (max-width:768px) {
+  .lineaNegra {
+    left: 260px !important;
+  }
+
+    .imagePresentation{
+      width:100%;
+    }
+
+  div#botones{
+    justify-content: center;
+  }
+  img.icons {
+    margin: auto !important;
+  }
+
+  main#presentation {
+  }
+  .textoPresentation {
+    width: 100%;
+    top: 60px;
+  }
+
+  .imagePresentation img {
+    top: 50px;
+    /* height: 366px; */
+    width: 440px;
+  }
+  .showcase {
+  object-fit: contain;
+  /* height: 582px; */
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+    .description{
+        /* color: #000; */
+    }
+
+    .musica{
+        margin: auto;
+        color:#fff;
+    }
+
+      
+
+  .lineaNegra {
+  position: absolute;
+  width: 100%;
+  height: 218%;
+  /* background: #000; */
+  /* z-index: -1; */
+  left: -35%;
+  top: -390px;
+  /* color: white; */
+  rotate: 30deg;
+  z-index: -31;
+  object-fit: contain;
+  object-position: center;
+  overflow-x: hidden;
+  }
+
+  .musica{
+  position: relative;
+  margin: auto;
+  color: #000 !important;
+  /* top: 60px !important; */
+  font-family: 'Raleway', sans-serif;
+  /* justify-content: center; */
+  text-align: center;
+  }
+
+  #presentation img {
+  position: relative;
+  z-index: 1;
+  /* top: 16px; */
+  margin: auto;
+  }
+}
