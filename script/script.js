@@ -1,6 +1,7 @@
 let intro = document.querySelector('.intro');
 let logo = document.querySelector('.logo');
 
+
 tsParticles.load({
     id: "tsparticles",
     options: {
